@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados - SIRMED</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 py-4">
+          <h4>Sobre</h4>
+          <p>A seguir você pode visualizar os resultados do seu exame de checkup. As bordas dos cards
+            indicam o estado do resultado sendo verde para normal, laranja para atenção e vermelho para resultado grave.
+          </p>
+        </div>
+        <div class="col-md-3 offset-md-1 py-4">
+          <h4>Opções</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="../../index.html" class="text-secondary">Página inicial</a>
+            </li>
+            <li>
+              <a href="../Escolha/index.html" class="text-secondary">Escolher outro exame</a>
+            </li>
+            <li>
+              <a id="sair" class="text-secondary">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center"><i
+          class="fa d-inline fa-home mr-2"></i><strong>SIRMED</strong> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span
+          class="navbar-toggler-icon"></span> </button>
+    </div>
+  </div>
+  <div class="text-center py-5">
+    <div class="container">
+      <div class="row my-5 justify-content-center">
+        <div class="col-md-9">
+          <h1>Exame de checkup</h1>
+          <h2 id="nome">Nome: </h2>
+          <p id="nascimento" class="lead text-muted">Nascimento: </p>
+          <p id="sexo" class="lead text-muted">Sexo: </p>
+          <p id="rg" class="lead text-muted">RG: </p>
+          <p id="cpf" class="lead text-muted">CPF: </p>
+          <p id="telefone" class="lead text-muted">Telefone: </p>
+          <p id="endereco" class="lead text-muted">Endereço: </p>
+          <p id="email" class="lead text-muted">E-Mail: </p>
+          <a id="imprimir" class="btn btn-primary m-2">Imprimir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div id="eritograma1" class="card box-shadow">
+            <img class="card-img-top" src="assets/sangue.jpg">
+            <div class="card-body">
+              <h3>Análise sanguínea</h3>
+              <p id="hemograma" class="card-text">Hemograma: </p>
+              <p id="glicemia" class="card-text">Glicemia: </p>
+              <p id="colesterol" class="card-text">Colesterol: </p>
+              <p id="triglicerideos" class="card-text">Triglicerídeos: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="eritograma2" class="card box-shadow">
+            <img class="card-img-top" src="assets/componentes.jpg">
+            <div class="card-body">
+              <h3>Componentes</h3>
+              <p id="ureia" class="card-text">Ureia: </p>
+              <p id="creatina" class="card-text">Creatina: </p>
+              <p id="tgo" class="card-text">TGO (AST): </p>
+              <p id="tgp" class="card-text">TGP (ALT): </p>
+              <p id="tsh" class="card-text">TSH: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="leucograma" class="card box-shadow">
+            <img class="card-img-top" src="assets/pressao.jpg">
+            <div class="card-body">
+              <h3>Dados gerais</h3>
+              <p id="t4" class="card-text">T4 livre: </p>
+              <p id="acido" class="card-text">Ácido Úrico: </p>
+              <p id="eletrocardiograma" class="card-text">Eletrocardiograma: </p>
+              <p id="ergometrico" class="card-text">Teste Ergométrico: </p>
+              <p id="ecocardiograma" class="card-text">Ecocardiograma: </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/dadosPessoais.js"></script>
+  <script src="js/dadosCheckup.js"></script>
+  <script src="js/preencheDadosCheckup.js"></script>
+</body>
+
+</html>
