@@ -1,4 +1,4 @@
-var dados = [
+var dadosCheckup = [
   {
     "Hemograma": "Anemia ",
     "Glicemia": "121 mg/dL",

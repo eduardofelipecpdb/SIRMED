@@ -1,21 +1,11 @@
 $(document).ready(function () {
     console.log("Carregou");
-    var email = sessionStorage.getItem("email");
+   // var email = sessionStorage.getItem("email");
+   email = "josesilva@contoso.com";
     var encontrou = false;
 
-    for (var dadosUsuario of dadosPessoais) {
-        if (email == dadosUsuario.Email) {
-            $("#nome").append(dadosUsuario.Nome);
-            $("#nascimento").append(dadosUsuario.datanasc);
-            dadosUsuario.Sexo == "M" ? $("#sexo").append("Masculino") : $("#sexo").append("Feminino");
-            $("#rg").append(dadosUsuario.RG);
-            $("#cpf").append(dadosUsuario.CPF);
-            $("#telefone").append(dadosUsuario.Telefone);
-            $("#endereco").append(dadosUsuario.Endereco);
-        }
-    }
 
-    for (var usuario of dados) {
+    for (var usuario of dadosSangue) {
         if (email == usuario.Email) {
             $("#email").append(usuario.Email);
             $("#hemacias").append(usuario.Hemacias);
@@ -32,19 +22,19 @@ $(document).ready(function () {
             $("#plaquetas").append(usuario.Plaquetas);
             switch (usuario.Estado) {
                 case "normal":
-                    $("#eritograma1").addClass("border-success");
-                    $("#eritograma2").addClass("border-success");
-                    $("#leucograma").addClass("border-success");
+                    $("#card4").addClass("border-success");
+                    $("#card5").addClass("border-success");
+                    $("#card6").addClass("border-success");
                     break;
                 case "anormal":
-                    $("#eritograma1").addClass("border-warning");
-                    $("#eritograma2").addClass("border-warning");
-                    $("#leucograma").addClass("border-warning");
+                    $("#card4").addClass("border-warning");
+                    $("#card5").addClass("border-warning");
+                    $("#card6").addClass("border-warning");
                     break;
                 case "grave":
-                    $("#eritograma1").addClass("border-danger");
-                    $("#eritograma2").addClass("border-danger");
-                    $("#leucograma").addClass("border-danger");
+                    $("#card4").addClass("border-danger");
+                    $("#card5").addClass("border-danger");
+                    $("#card6").addClass("border-danger");
                     break;
                 default:
                     console.log("Ocorreu um erro ao ler a gravidade do resultado");
@@ -53,13 +43,4 @@ $(document).ready(function () {
         }
     }
     if(encontrou == false)alert("Não encontramos dados relacionados a este usuário");
-});
-
-$("#sair").on('click', event => {
-    sessionStorage.removeItem('email');
-    document.location.href = "../index.html";
-});
-
-$("#imprimir").on('click', event => {
-    window.print();
 });

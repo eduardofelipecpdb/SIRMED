@@ -1,21 +1,11 @@
 $(document).ready(function () {
     console.log("Carregou");
-    var email = sessionStorage.getItem("email");
+    //var email = sessionStorage.getItem("email");
+    var email = "josesilva@contoso.com";
     var encontrou = false;
 
-    for (var dadosUsuario of dadosPessoais) {
-        if (email == dadosUsuario.Email) {
-            $("#nome").append(dadosUsuario.Nome);
-            $("#nascimento").append(dadosUsuario.datanasc);
-            dadosUsuario.Sexo == "M" ? $("#sexo").append("Masculino") : $("#sexo").append("Feminino");
-            $("#rg").append(dadosUsuario.RG);
-            $("#cpf").append(dadosUsuario.CPF);
-            $("#telefone").append(dadosUsuario.Telefone);
-            $("#endereco").append(dadosUsuario.Endereco);
-        }
-    }
 
-    for (var usuario of dados) {
+    for (var usuario of dadosCheckup) {
         if (email == usuario.Email) {
             $("#email").append(usuario.Email);
             $("#hemograma").append(usuario.Hemograma);
@@ -34,19 +24,19 @@ $(document).ready(function () {
             $("#ecocardiograma").append(usuario.Ecocardiograma);
             switch (usuario.Estado) {
                 case "normal":
-                    $("#eritograma1").addClass("border-success");
-                    $("#eritograma2").addClass("border-success");
-                    $("#leucograma").addClass("border-success");
+                    $("#card1").addClass("border-success");
+                    $("#card2").addClass("border-success");
+                    $("#card3").addClass("border-success");
                     break;
                 case "anormal":
-                    $("#eritograma1").addClass("border-warning");
-                    $("#eritograma2").addClass("border-warning");
-                    $("#leucograma").addClass("border-warning");
+                    $("#card1").addClass("border-warning");
+                    $("#card2").addClass("border-warning");
+                    $("#card3").addClass("border-warning");
                     break;
                 case "grave":
-                    $("#eritograma1").addClass("border-danger");
-                    $("#eritograma2").addClass("border-danger");
-                    $("#leucograma").addClass("border-danger");
+                    $("#card1").addClass("border-danger");
+                    $("#card2").addClass("border-danger");
+                    $("#card3").addClass("border-danger");
                     break;
                 default:
                     console.log("Ocorreu um erro ao ler a gravidade do resultado");

@@ -1,4 +1,4 @@
-var dados = [
+var dadosSangue = [
     {
       "Hemacias": "4,51 tera/L",
       "Hematocrito": "42%",
