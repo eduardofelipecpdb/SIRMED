@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-md-7 py-4">
           <h4>Sobre</h4>
-          <p>A seguir você pode visualizar os resultados do seu exame de sangue. As bordas dos cards
+          <p>A seguir você pode visualizar os resultados do seu exame de checkup, urina e sangue. As bordas dos cards
             indicam o estado do resultado sendo verde para normal, laranja para atenção e vermelho para resultado grave.
           </p>
         </div>
@@ -40,25 +40,16 @@
   <div class="navbar navbar-dark bg-dark">
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center"><i
-          class="fa d-inline fa-home mr-2"></i><strong>SIRMED</strong> </a>
+          class="fa d-inline fa-home mr-2"></i><strong>SIRMED - Exames</strong> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span
           class="navbar-toggler-icon"></span> </button>
     </div>
   </div>
-  <div class="text-center py-5">
+  <div class="text-center py-1">
     <div class="container">
-      <div class="row my-5 justify-content-center">
+      <div class="row my-1 justify-content-center">
         <div class="col-md-9">
-          <h1>Exame de sangue</h1>
-          <h2 id="nome">Nome: </h2>
-          <p id="nascimento" class="lead text-muted">Nascimento: </p>
-          <p id="sexo" class="lead text-muted">Sexo: </p>
-          <p id="rg" class="lead text-muted">RG: </p>
-          <p id="cpf" class="lead text-muted">CPF: </p>
-          <p id="telefone" class="lead text-muted">Telefone: </p>
-          <p id="endereco" class="lead text-muted">Endereço: </p>
-          <p id="email" class="lead text-muted">E-Mail: </p>
-          <a id="imprimir" class="btn btn-primary m-2">Imprimir</a>
+          <a id="imprimir" class="btn btn-primary m-2" onclick="window.print();">Imprimir</a>
         </div>
       </div>
     </div>
@@ -67,7 +58,47 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 p-3">
-          <div id="eritograma1" class="card box-shadow">
+          <div id="card1" class="card box-shadow">
+            <img class="card-img-top" src="assets/sangue.jpg">
+            <div class="card-body">
+              <h3>Análise sanguínea</h3>
+              <p id="hemograma" class="card-text">Hemograma: </p>
+              <p id="glicemia" class="card-text">Glicemia: </p>
+              <p id="colesterol" class="card-text">Colesterol: </p>
+              <p id="triglicerideos" class="card-text">Triglicerídeos: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="card2" class="card box-shadow">
+            <img class="card-img-top" src="assets/componentes.jpg">
+            <div class="card-body">
+              <h3>Componentes</h3>
+              <p id="ureia" class="card-text">Ureia: </p>
+              <p id="creatina" class="card-text">Creatina: </p>
+              <p id="tgo" class="card-text">TGO (AST): </p>
+              <p id="tgp" class="card-text">TGP (ALT): </p>
+              <p id="tsh" class="card-text">TSH: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="card3" class="card box-shadow">
+            <img class="card-img-top" src="assets/pressao.jpg">
+            <div class="card-body">
+              <h3>Dados gerais</h3>
+              <p id="t4" class="card-text">T4 livre: </p>
+              <p id="acido" class="card-text">Ácido Úrico: </p>
+              <p id="eletrocardiograma" class="card-text">Eletrocardiograma: </p>
+              <p id="ergometrico" class="card-text">Teste Ergométrico: </p>
+              <p id="ecocardiograma" class="card-text">Ecocardiograma: </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div id="card4" class="card box-shadow">
             <img class="card-img-top" src="assets/hemoglobina.jpg">
             <div class="card-body">
               <h3>Eritograma</h3>
@@ -79,7 +110,7 @@
           </div>
         </div>
         <div class="col-md-4 p-3">
-          <div id="eritograma2" class="card box-shadow">
+          <div id="card5" class="card box-shadow">
             <img class="card-img-top" src="assets/hcm.jpg">
             <div class="card-body">
               <h3>Eritograma</h3>
@@ -91,7 +122,7 @@
           </div>
         </div>
         <div class="col-md-4 p-3">
-          <div id="leucograma" class="card box-shadow">
+          <div id="card6" class="card box-shadow">
             <img class="card-img-top" src="assets/plaquetas.jpg">
             <div class="card-body">
               <h3>Leucograma</h3>
@@ -99,6 +130,42 @@
               <p id="mielocitos" class="card-text">Mielócitos: </p>
               <p id="monocitos" class="card-text">Monócitos: </p>
               <p id="plaquetas" class="card-text">Plaquetas: </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div id="card7" class="card box-shadow">
+            <img class="card-img-top" src="assets/gerais.jpg">
+            <div class="card-body">
+              <h3>Dados da urina</h3>
+              <p id="densidade" class="card-text">Densidade Urinária: </p>
+              <p id="ph" class="card-text">pH: </p>
+              <p id="glicose" class="card-text">Glicose: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="card8" class="card box-shadow">
+            <img class="card-img-top" src="assets/proteinas.jpg">
+            <div class="card-body">
+              <h3>Compostos</h3>
+              <p id="proteina" class="card-text">Proteína: </p>
+              <p id="bilirrubina" class="card-text">Bilirrubina: </p>
+              <p id="urobilinogenio" class="card-text">Urobilinogênio: </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div id="card9" class="card box-shadow">
+            <img class="card-img-top" src="assets/leucocitos.jpg">
+            <div class="card-body">
+              <h3>Hemácias</h3>
+              <p id="hemaciasUrina" class="card-text">Hemácias: </p>
+              <p id="leucocitosUrina" class="card-text">Leucócitos: </p>
+              <p id="nitrito" class="card-text">Nitrito: </p>
+              <p id="cetonicos" class="card-text">Corpos Cetônicos: </p>
             </div>
           </div>
         </div>
@@ -122,8 +189,12 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="js/dadosPessoais.js"></script>
+  <script src="js/dadosCheckup.js"></script>
   <script src="js/dadosSangue.js"></script>
+  <script src="js/dadosUrina.js"></script>
+  <script src="js/preencheDadosCheckup.js"></script>
   <script src="js/preencheDadosSangue.js"></script>
+  <script src="js/preencheDadosUrina.js"></script>
 </body>
 
 </html>

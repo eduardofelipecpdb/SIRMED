@@ -1,7 +1,6 @@
 $(document).ready(function () {
     console.log("Carregou");
-   // var email = sessionStorage.getItem("email");
-   email = "josesilva@contoso.com";
+   var email = sessionStorage.getItem("email");
     var encontrou = false;
 
 

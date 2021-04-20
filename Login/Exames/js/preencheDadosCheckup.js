@@ -1,7 +1,6 @@
 $(document).ready(function () {
     console.log("Carregou");
-    //var email = sessionStorage.getItem("email");
-    var email = "josesilva@contoso.com";
+    var email = sessionStorage.getItem("email");
     var encontrou = false;
 
 
@@ -50,8 +49,4 @@ $(document).ready(function () {
 $("#sair").on('click', event => {
     sessionStorage.removeItem('email');
     document.location.href = "../index.html";
-});
-
-$("#imprimir").on('click', event => {
-    window.print();
 });
