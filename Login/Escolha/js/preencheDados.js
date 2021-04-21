@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("Carregou");
     var email = sessionStorage.getItem("email");
     var encontrou = false;
 

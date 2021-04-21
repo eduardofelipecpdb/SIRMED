@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    console.log("Carregou");
-   var email = sessionStorage.getItem("email");
+    var email = sessionStorage.getItem("email");
     var encontrou = false;
 
 
@@ -41,5 +40,5 @@ $(document).ready(function () {
             encontrou = true;
         }
     }
-    if(encontrou == false)alert("Não encontramos dados relacionados a este usuário");
+    if (encontrou == false) alert("Não encontramos dados relacionados a este usuário");
 });

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resultados - SIRMED</title>
+  <title>Recomendações Gerais - SIRMED</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     type="text/css">
   <link rel="stylesheet" href="wireframe.css">
@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-md-7 py-4">
           <h4>Sobre</h4>
-          <p>A seguir você pode visualizar o seu receituário médico.
+          <p>A seguir você pode visualizar as recomendações de seu médico responsável
           </p>
         </div>
         <div class="col-md-3 offset-md-1 py-4">
@@ -38,8 +38,8 @@
   </div>
   <div class="navbar navbar-dark bg-dark">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center"><i
-          class="fa d-inline fa-home mr-2"></i><strong>SIRMED - Receituário</strong> </a>
+      <a href="#" class="navbar-brand d-flex align-items-center"><i class="fa d-inline fa-home mr-2"></i><strong>SIRMED
+          - Recomendações médicas</strong> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span
           class="navbar-toggler-icon"></span> </button>
     </div>
@@ -55,8 +55,13 @@
   </div>
   <div class="py-4 bg-light">
     <div class="container">
-      <ol id="listaMedicacoes" class="list-group list-group-numbered">
-        
+      <ol class="list-group list-group-numbered">
+        <li class='list-group-item d-flex justify-content-between align-items-start'>
+          <div class='ms-2 me-auto'>
+            <h4>Recomendações médicas: </h4>
+            <p id="recomendacoes"></p>
+          </div>
+        </li>
       </ol>
     </div>
   </div>
@@ -76,8 +81,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="js/dados/dadosMedicacoes.js"></script>
-  <script src="js/receituario.js"></script>
+  <script src="js/dados/dadosRecomendacoes.js"></script>
+  <script src="js/recomendacoes.js"></script>
 </body>
 
 </html>
