@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados - SIRMED</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 py-4">
+          <h4>Sobre</h4>
+          <p>Para criar um novo receituário médico preencha os campos a seguir</p>
+        </div>
+        <div class="col-md-3 offset-md-1 py-4">
+          <h4>Opções</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="../../index.html" class="text-secondary">Página inicial</a>
+            </li>
+            <li>
+              <a href="../Escolha/index.html" class="text-secondary">Escolher outro exame</a>
+            </li>
+            <li>
+              <a id="sair" class="text-secondary">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center"><i class="fa d-inline fa-home mr-2"></i><strong>SIRMED
+          - Receituário</strong> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span
+          class="navbar-toggler-icon"></span> </button>
+    </div>
+  </div>
+  <div class="text-center py-1">
+    <div class="container">
+      <div class="row my-1 justify-content-center">
+        <div class="col-md-9">
+          <a id="imprimir" class="btn btn-primary m-2" onclick="window.print();">Imprimir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <form id="receituario" method="post" onsubmit="event.preventDefault();">
+      <div class="form-row justify-content-center">
+        <div class="col-md-6 col-10">
+          <div class="row">
+            <label for="cpf">CPF paciente:</label>
+            <input type="text" class="form-control" id="cpf" placeholder="Ex: 999.999.999-99">
+            <small id="cpfHelp" class="form-text text-muted">CPF do paciente a atribuir o medicamento. Deve ser
+              conferido por documento com foto!</small>
+          </div><br>
+          <div class="row">
+            <label for="nome">Nome da medicação:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Ex: Furosemida">
+            <small id="nomeHelp" class="form-text text-muted">Nome da medicação a ser prescrita!</small>
+          </div><br>
+          <div class="row">
+            <label for="qtd">Quantidade:</label>
+            <input type="text" class="form-control" id="qtd" placeholder="Ex: 40mg">
+            <small id="qtdHelp" class="form-text text-muted">Quantidade da medicação a ser prescrita. É importante
+              adicionar a unidade de medida!</small>
+          </div><br>
+          <div class="row">
+            <label for="period">Periodicidade:</label>
+            <input type="text" class="form-control" id="period" placeholder="Ex: 12h">
+            <small id="periodHelp" class="form-text text-muted">Periodicidade da medicação. Deve conter unidade de
+              medida!</small>
+          </div><br>
+          <div class="row">
+            <label for="uso">Tipo de uso:</label>
+            <input type="text" class="form-control" id="uso" placeholder="Ex: Via oral">
+            <small id="nomeHelp" class="form-text text-muted">Tipo de uso da medicação.</small>
+          </div><br>
+        </div>
+      </div>
+      <div class="form-row justify-content-center">
+        <div class="col-md-6 col-10">
+          <div class="row justify-content-end">
+            <button id="cancelar" type="button" class="btn btn-outline-danger">Cancelar</button>&nbsp;&nbsp;
+            <button type="submit" class="btn btn-success">Salvar prescrição</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="../Exames/js/dados/dadosMedicacoes.js"></script>
+  <script src="js/criarReceituario.js"></script>
+</body>
+
+</html>
