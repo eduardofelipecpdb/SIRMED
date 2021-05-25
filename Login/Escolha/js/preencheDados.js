@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var email = sessionStorage.getItem("email");
+    var email = localStorage.getItem("email");
     var encontrou = false;
 
     for (var dadosUsuario of dadosPessoais) {
@@ -20,6 +20,6 @@ $(document).ready(function () {
 });
 
 $("#sair").on('click', event => {
-    sessionStorage.removeItem('email');
+    localStorage.removeItem('email');
     document.location.href = "../index.html";
 });

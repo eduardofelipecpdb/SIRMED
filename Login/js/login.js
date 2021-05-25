@@ -16,7 +16,7 @@ var usuarios = [
 $('#teste').on('submit', event => {
   var login = VerificaUsuario();
   if (login) {
-    sessionStorage.setItem("email", $('#email').val());
+    localStorage.setItem("email", $('#email').val());
     document.location.href = "Escolha/index.html";
   }
   else alert("Login ou senha incorretos");

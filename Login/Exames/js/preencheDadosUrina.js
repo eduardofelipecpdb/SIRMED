@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //var email = sessionStorage.getItem("email");
+    //var email = localStorage.getItem("email");
     email = "josesilva@contoso.com";
     var encontrou = false;
 

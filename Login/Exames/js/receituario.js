@@ -1,7 +1,13 @@
 $(document).ready(function () {
-    var email = sessionStorage.getItem("email");
+    var email = "josesilva@contoso.com";//localStorage.getItem("email");
     var encontrou = false;
-    for (var receituarioUsuario of medicacoes) {
+    var medicacoesStorage = JSON.parse(`${localStorage.getItem("dadosMedicacoes")}`), medicacoesFinal;
+
+    medicacoesStorage == null ? medicacoesFinal = medicacoes : medicacoesFinal = medicacoesStorage;
+
+    console.log(medicacoesStorage);
+
+    for (var receituarioUsuario of medicacoesFinal) {
         if (email == receituarioUsuario.Email) {
             for (var medicamento of receituarioUsuario.Remedios){
                 var linha = "<li class='list-group-item d-flex justify-content-between align-items-start'><div class='ms-2 me-auto'>";
@@ -18,6 +24,6 @@ $(document).ready(function () {
 });
 
 $("#sair").on('click', event => {
-    sessionStorage.removeItem('email');
+    localStorage.removeItem('email');
     document.location.href = "../index.html";
 });

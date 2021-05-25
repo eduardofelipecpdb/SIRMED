@@ -1,6 +1,7 @@
 var medicacoes = [
     {
         "Email": "josesilva@contoso.com",
+        "Cpf": "843.236.845-34",
         "Remedios": [
             {
                 "Nome": "levofloxacino",
@@ -30,6 +31,7 @@ var medicacoes = [
     },
     {
         "Email": "andrenascimento@contoso.com",
+        "Cpf": "957.431.563-33",
         "Remedios": [
             {
                 "Nome": "Phosfoenema ",
@@ -59,6 +61,7 @@ var medicacoes = [
     },
     {
         "Email": "julianasouza@contoso.com",
+        "Cpf": "578.243.765-67",
         "Remedios": [
             {
                 "Nome": "Valeriana",
