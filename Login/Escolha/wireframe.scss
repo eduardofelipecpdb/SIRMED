@@ -18,7 +18,7 @@ $theme-colors: (
 );
 
 
-$body-color: #333;
+$body-color: #000;
 
 
 $body-color-inverse: invert($body-color) !default;
@@ -39,7 +39,9 @@ $font-weight-bold: 700;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
 $headings-line-height: 1.2;
-$body-bg: White;
+$body-bg: white;
+
+
 
 
 
