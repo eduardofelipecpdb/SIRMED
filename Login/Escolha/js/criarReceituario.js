@@ -14,7 +14,6 @@ $('#receituario').on('submit', event => {
     var medicacoesStorage = JSON.parse(`${localStorage.getItem("dadosMedicacoes")}`), medicacoesFinal;
 
     medicacoesStorage == null ? medicacoesFinal = medicacoes : medicacoesFinal = medicacoesStorage;
-    console.log(medicacoesFinal);
 
     var receituario = {
         Nome: $("#nome").val(),
@@ -22,11 +21,9 @@ $('#receituario').on('submit', event => {
         Periodicidade: $("#period").val(),
         Uso: $("#uso").val()
     };
-    console.log(receituario);
 
     for (var receituarioUsuario of medicacoesFinal) {
         if (cpf == receituarioUsuario.Cpf) {
-            console.log(receituarioUsuario.Remedios);
             receituarioUsuario.Remedios.push(receituario);
             localStorage.setItem("dadosMedicacoes", JSON.stringify(medicacoesFinal));
             erro = false;

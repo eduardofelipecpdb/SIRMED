@@ -15,10 +15,8 @@ $('#receituario').on('submit', event => {
     var recomendacoesStorage = JSON.parse(`${localStorage.getItem("dadosRecomendacoes")}`), recomendacoesFinal;
 
     recomendacoesStorage == null ? recomendacoesFinal = dadosRecomendacoes : recomendacoesFinal = recomendacoesStorage;
-    console.log(recomendacoesFinal);
 
     var recomendacao = $("#reco").val();
-    console.log(receituario);
 
     for (var recomendacoesUsuario of recomendacoesFinal) {
         if (cpf == recomendacoesUsuario.Cpf) {

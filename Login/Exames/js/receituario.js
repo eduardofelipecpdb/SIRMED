@@ -5,8 +5,6 @@ $(document).ready(function () {
 
     medicacoesStorage == null ? medicacoesFinal = medicacoes : medicacoesFinal = medicacoesStorage;
 
-    console.log(medicacoesStorage);
-
     for (var receituarioUsuario of medicacoesFinal) {
         if (email == receituarioUsuario.Email) {
             for (var medicamento of receituarioUsuario.Remedios){
