@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    //var email = localStorage.getItem("email");
-    email = "josesilva@contoso.com";
+    var email = localStorage.getItem("email");
     var encontrou = false;
 
     for (var usuario of dadosUrina) {
