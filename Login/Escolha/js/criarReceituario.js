@@ -32,6 +32,8 @@ $('#receituario').on('submit', event => {
             erro = false;
         }
     }
+    alert("Prescrição cadastrada com sucesso para o cpf: " + cpf);
+    document.location.href = "indexFuncionario.html";
 });
 $('#cancelar').on('click', event => {
     document.location.href = "indexFuncionario.html";

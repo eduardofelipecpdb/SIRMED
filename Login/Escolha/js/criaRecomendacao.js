@@ -27,6 +27,8 @@ $('#receituario').on('submit', event => {
             erro = false;
         }
     }
+    alert("Recomendação cadastrada com sucesso para o cpf: " + cpf);
+    document.location.href = "indexFuncionario.html";
 });
 $('#cancelar').on('click', event => {
     document.location.href = "indexFuncionario.html";
