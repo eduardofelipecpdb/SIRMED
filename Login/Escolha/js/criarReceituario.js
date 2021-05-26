@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('#cpf').mask('000.000.000-00', { reverse: true });
     var authMedico = localStorage.getItem("authMedico");
-    if(authMedico != true) {
+    if(authMedico != "true") {
         alert("Por favor, realizar Login");
-        document.location.href = "../../index.html";
+        document.location.href = "../index.html";
     }
     //localStorage.setItem("dadosMedicacoes", JSON.stringify(medicacoes)); //Zera os remédios da session storage
 });

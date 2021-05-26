@@ -29,6 +29,7 @@ $('#teste').on('submit', event => {
     if(isMedico)
     {
       localStorage.setItem("authMedico", true);
+      //alert(localStorage.getItem("authMedico"));
       document.location.href = "Escolha/indexFuncionario.html";
     }
     else

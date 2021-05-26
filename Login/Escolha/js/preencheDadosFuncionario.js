@@ -1,8 +1,9 @@
 $(document).ready(function () {
     var authMedico = localStorage.getItem("authMedico");
-    if(authMedico != true) {
+    //alert(authMedico);
+    if(authMedico != "true") {
         alert("Por favor realizar Login");
-        document.location.href = "../../index.html";
+        document.location.href = "../index.html";
     }
     var email = localStorage.getItem("email");
     var encontrou = false;
@@ -26,5 +27,6 @@ $(document).ready(function () {
 
 $("#sair").on('click', event => {
     localStorage.removeItem('email');
+    localStorage.removeItem('authMedico');
     document.location.href = "../index.html";
 });
