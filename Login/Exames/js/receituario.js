@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var email = "josesilva@contoso.com";//localStorage.getItem("email");
+    var email = localStorage.getItem("email");
     var encontrou = false;
     var medicacoesStorage = JSON.parse(`${localStorage.getItem("dadosMedicacoes")}`), medicacoesFinal;
 

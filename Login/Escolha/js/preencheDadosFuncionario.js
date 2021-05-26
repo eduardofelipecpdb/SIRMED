@@ -1,6 +1,10 @@
 $(document).ready(function () {
-    //var email = localStorage.getItem("email");
-    var email = "claudianascimento@contoso.com";
+    var authMedico = localStorage.getItem("authMedico");
+    if(authMedico != true) {
+        alert("Por favor realizar Login");
+        document.location.href = "../../index.html";
+    }
+    var email = localStorage.getItem("email");
     var encontrou = false;
 
     for (var dadosUsuario of dadosPessoais) {

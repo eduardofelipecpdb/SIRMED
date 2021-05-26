@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-md-7 py-4">
           <h4>Sobre</h4>
-          <p>Para criar um novo receituário médico preencha os campos a seguir</p>
+          <p>Para criar uma nova recomendação médica preencha os campos a seguir</p>
         </div>
         <div class="col-md-3 offset-md-1 py-4">
           <h4>Opções</h4>
@@ -63,26 +63,9 @@
               conferido por documento com foto!</small>
           </div><br>
           <div class="row">
-            <label for="nome">Nome da medicação:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Ex: Furosemida">
-            <small id="nomeHelp" class="form-text text-muted">Nome da medicação a ser prescrita!</small>
-          </div><br>
-          <div class="row">
-            <label for="qtd">Quantidade:</label>
-            <input type="text" class="form-control" id="qtd" placeholder="Ex: 40mg">
-            <small id="qtdHelp" class="form-text text-muted">Quantidade da medicação a ser prescrita. É importante
-              adicionar a unidade de medida!</small>
-          </div><br>
-          <div class="row">
-            <label for="period">Periodicidade:</label>
-            <input type="text" class="form-control" id="period" placeholder="Ex: 12h">
-            <small id="periodHelp" class="form-text text-muted">Periodicidade da medicação. Deve conter unidade de
-              medida!</small>
-          </div><br>
-          <div class="row">
-            <label for="uso">Tipo de uso:</label>
-            <input type="text" class="form-control" id="uso" placeholder="Ex: Via oral">
-            <small id="nomeHelp" class="form-text text-muted">Tipo de uso da medicação.</small>
+            <label for="reco">Recomendação:</label>
+            <textarea type="text" class="form-control" id="reco" placeholder="Ex: Recomendo repouso até se sentir disposto"></textarea>-
+            <small id="recoHelp" class="form-text text-muted">Recomendação ou conclusão a ser enviada ao paciente!</small>
           </div><br>
         </div>
       </div>
@@ -106,8 +89,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="../Exames/js/dados/dadosMedicacoes.js"></script>
-  <script src="js/criarReceituario.js"></script>
+  <script src="../Exames/js/dados/dadosRecomendacoes.js"></script>
+  <script src="js/criaRecomendacao.js"></script>
 </body>
 
 </html>

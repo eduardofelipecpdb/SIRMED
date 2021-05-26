@@ -50,5 +50,5 @@ var dadosPessoais = [
       "Unidade": "Laboratorio Fleury",
       "Divisao": "Exames Diagnosticos",
       "Cargo": "Médico"
-    },
+    }
    ];

@@ -1,9 +1,11 @@
 $(document).ready(function () {
-    var email = localStorage.getItem("email");
+    var email = "josesilva@contoso.com";//localStorage.getItem("email");
     var encontrou = false;
+    var recomendacoesStorage = JSON.parse(`${localStorage.getItem("dadosRecomendacoes")}`), recomendacoesFinal;
 
+    recomendacoesStorage == null ? recomendacoesFinal = dadosRecomendacoes : recomendacoesFinal = recomendacoesStorage;
 
-    for (var usuario of dadosRecomendacoes) {
+    for (var usuario of recomendacoesFinal) {
         if (email == usuario.Email) {
             $("#recomendacoes").append(usuario.Recomendacao);
             encontrou = true;
